@@ -11,7 +11,11 @@ public class DamageDealer : MonoBehaviour
     {
         if (other.CompareTag("Target"))
         {
-            other.GetComponent<Destination>().health -= _damageCount;
+            var otherGameObjectHealth = other.GetComponent<Destination>().health;
+            otherGameObjectHealth -= _damageCount;
+            other.GetComponent<Destination>().health = otherGameObjectHealth;
+            Debug.Log(otherGameObjectHealth);
+            Destroy(gameObject);
         }
     }
 }

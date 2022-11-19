@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
@@ -26,8 +27,8 @@ public class Destination : MonoBehaviour
     {
         if (health == 0)
         {
+            Time.timeScale = 0;
             Destroy(gameObject);
-            return;
         }
         else
         {

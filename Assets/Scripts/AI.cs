@@ -44,7 +44,7 @@ public class AI : MonoBehaviour
         if (_canCreate)
         {
             var obj = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-            obj.GetComponent<Rigidbody>().AddForce(transform.forward  * 10f, ForceMode.Impulse);
+            obj.GetComponent<Rigidbody>().AddForce(transform.forward  * 20f, ForceMode.Impulse);
             StartCoroutine(Delay());
         }
     }
