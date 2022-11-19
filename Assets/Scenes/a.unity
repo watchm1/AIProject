@@ -2464,7 +2464,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -3180,7 +3180,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -5526,7 +5526,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -6693,7 +6693,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -11025,7 +11025,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -12068,15 +12068,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7dd9b9d0b73b3c244ad407738a52dfa8, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.8
+      value: 0.59046096
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7dd9b9d0b73b3c244ad407738a52dfa8, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.34157273
+      value: 0.2521067
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7dd9b9d0b73b3c244ad407738a52dfa8, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.8
+      value: 0.59046096
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7dd9b9d0b73b3c244ad407738a52dfa8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12308,7 +12308,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -12574,6 +12574,7 @@ GameObject:
   - component: {fileID: 1389156669}
   - component: {fileID: 1389156668}
   - component: {fileID: 1389156667}
+  - component: {fileID: 1389156670}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -12639,14 +12640,28 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389156666}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 9.4, y: 103.4, z: 23.7}
+  m_LocalRotation: {x: 0.580962, y: -0, z: -0, w: 0.81393075}
+  m_LocalPosition: {x: 9.4, y: 41.3, z: -9.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 71.036, y: 0, z: 0}
+--- !u!114 &1389156670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389156666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0743d815c34483941bfa868933a9a4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 297706544}
+  multiplier: 0.5
 --- !u!1 &1399939202
 GameObject:
   m_ObjectHideFlags: 0
@@ -14068,7 +14083,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -16744,7 +16759,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

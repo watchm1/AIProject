@@ -28,17 +28,9 @@ public class Destination : MonoBehaviour
     {
         if (other.CompareTag("Point"))
         {
-            
-            if (_currentTarget == points.Length -1)
-            {
-                _currentTarget = 0;
-            }
-            else
-            {
-                _currentTarget = Random.Range(0, points.Length-1);
-            }
+            _currentTarget = Random.Range(0, points.Length-1);
             HandleAllDestinations();
-            Debug.Log("Current index" + _currentTarget);
+            
         }
     }
 
