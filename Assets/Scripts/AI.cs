@@ -16,7 +16,7 @@ public class AI : MonoBehaviour
     public void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
-        _defaultAttackDistance = 5f;
+        _defaultAttackDistance = 15f;
         _canCreate = true;
     }
 

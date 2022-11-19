@@ -28,7 +28,7 @@ public class Destination : MonoBehaviour
         if (health == 0)
         {
             Time.timeScale = 0;
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
         else
         {
@@ -43,8 +43,6 @@ public class Destination : MonoBehaviour
             HandleAllDestinations();
             
         }
-        
-        
     }
 
     private void HandleAllDestinations()
