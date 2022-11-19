@@ -7,6 +7,7 @@ using Random = UnityEngine.Random;
 
 public class Destination : MonoBehaviour
 {
+    public float health;
     private AI[] _aiScripts;
     public GameObject[] points;
     private int _currentTarget;
@@ -18,11 +19,20 @@ public class Destination : MonoBehaviour
         HandleAllDestinations();
         _selfNavmesh = GetComponent<NavMeshAgent>();
         _selfNavmesh.speed = 10f;
+        health = 100;
     }
 
     private void Update()
     {
-        _selfNavmesh.SetDestination(points[_currentTarget].transform.position);
+        if (health == 0)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        else
+        {
+            _selfNavmesh.SetDestination(points[_currentTarget].transform.position);
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -32,6 +42,8 @@ public class Destination : MonoBehaviour
             HandleAllDestinations();
             
         }
+        
+        
     }
 
     private void HandleAllDestinations()

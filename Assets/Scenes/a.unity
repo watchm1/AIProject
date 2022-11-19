@@ -2405,7 +2405,7 @@ GameObject:
   - component: {fileID: 297706551}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Point
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2501,6 +2501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603a1fea51cd8b44f993f5dac7a7dc93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 0
   points:
   - {fileID: 988471227}
   - {fileID: 952909506}
@@ -2583,6 +2584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151c002fe7ecb7e44b7c0c3969973fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 7875397779019330513, guid: 1a203a640f3a92044b57b2dd7618ae4c, type: 3}
   agent: {fileID: 0}
   target: {fileID: 297706544}
 --- !u!195 &299628950
@@ -3299,6 +3301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151c002fe7ecb7e44b7c0c3969973fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 7875397779019330513, guid: 1a203a640f3a92044b57b2dd7618ae4c, type: 3}
   agent: {fileID: 0}
   target: {fileID: 297706544}
 --- !u!195 &353436617
@@ -5645,6 +5648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151c002fe7ecb7e44b7c0c3969973fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 7875397779019330513, guid: 1a203a640f3a92044b57b2dd7618ae4c, type: 3}
   agent: {fileID: 0}
   target: {fileID: 297706544}
 --- !u!195 &557751910
@@ -6812,6 +6816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151c002fe7ecb7e44b7c0c3969973fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 7875397779019330513, guid: 1a203a640f3a92044b57b2dd7618ae4c, type: 3}
   agent: {fileID: 0}
   target: {fileID: 297706544}
 --- !u!195 &688553784
@@ -11275,6 +11280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151c002fe7ecb7e44b7c0c3969973fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 7875397779019330513, guid: 1a203a640f3a92044b57b2dd7618ae4c, type: 3}
   agent: {fileID: 0}
   target: {fileID: 297706544}
 --- !u!195 &1163185028
@@ -12594,6 +12600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151c002fe7ecb7e44b7c0c3969973fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 7875397779019330513, guid: 1a203a640f3a92044b57b2dd7618ae4c, type: 3}
   agent: {fileID: 0}
   target: {fileID: 297706544}
 --- !u!1001 &1346227778
@@ -14333,6 +14340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151c002fe7ecb7e44b7c0c3969973fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 7875397779019330513, guid: 1a203a640f3a92044b57b2dd7618ae4c, type: 3}
   agent: {fileID: 0}
   target: {fileID: 297706544}
 --- !u!195 &1483012367
@@ -17009,6 +17017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151c002fe7ecb7e44b7c0c3969973fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 7875397779019330513, guid: 1a203a640f3a92044b57b2dd7618ae4c, type: 3}
   agent: {fileID: 0}
   target: {fileID: 297706544}
 --- !u!195 &1799040903
