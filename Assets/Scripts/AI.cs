@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class AI : MonoBehaviour
 {
-    private NavMeshAgent _agent;
+    public NavMeshAgent _agent;
     public GameObject target;
     void Start()
     {

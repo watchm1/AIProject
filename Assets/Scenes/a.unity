@@ -2269,9 +2269,10 @@ GameObject:
   - component: {fileID: 297706547}
   - component: {fileID: 297706546}
   - component: {fileID: 297706545}
+  - component: {fileID: 297706549}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2347,13 +2348,30 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 297706544}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.13, y: 3.1, z: 2.87}
+  m_LocalPosition: {x: 58.9, y: 3.1, z: 2.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &297706549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297706544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 603a1fea51cd8b44f993f5dac7a7dc93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {fileID: 988471227}
+  - {fileID: 952909506}
+  - {fileID: 474682139}
+  - {fileID: 590453401}
 --- !u!1 &299628948
 GameObject:
   m_ObjectHideFlags: 0
@@ -2387,6 +2405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151c002fe7ecb7e44b7c0c3969973fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _agent: {fileID: 299628950}
   target: {fileID: 297706544}
 --- !u!195 &299628950
 NavMeshAgent:
@@ -3102,6 +3121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151c002fe7ecb7e44b7c0c3969973fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _agent: {fileID: 299628950}
   target: {fileID: 297706544}
 --- !u!195 &353436617
 NavMeshAgent:
@@ -3934,7 +3954,7 @@ GameObject:
   - component: {fileID: 474682140}
   m_Layer: 0
   m_Name: Point3
-  m_TagString: Untagged
+  m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3947,7 +3967,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474682139}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -5441,6 +5461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151c002fe7ecb7e44b7c0c3969973fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _agent: {fileID: 299628950}
   target: {fileID: 297706544}
 --- !u!195 &557751910
 NavMeshAgent:
@@ -5912,7 +5933,7 @@ GameObject:
   - component: {fileID: 590453402}
   m_Layer: 0
   m_Name: Point4
-  m_TagString: Untagged
+  m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5925,7 +5946,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590453401}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -6607,6 +6628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151c002fe7ecb7e44b7c0c3969973fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _agent: {fileID: 299628950}
   target: {fileID: 297706544}
 --- !u!195 &688553784
 NavMeshAgent:
@@ -8935,7 +8957,7 @@ GameObject:
   - component: {fileID: 952909507}
   m_Layer: 0
   m_Name: Point2
-  m_TagString: Untagged
+  m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8948,7 +8970,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952909506}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -9295,7 +9317,7 @@ GameObject:
   - component: {fileID: 988471228}
   m_Layer: 0
   m_Name: Point1
-  m_TagString: Untagged
+  m_TagString: Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9308,7 +9330,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988471227}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -10744,6 +10766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151c002fe7ecb7e44b7c0c3969973fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _agent: {fileID: 299628950}
   target: {fileID: 297706544}
 --- !u!195 &1163185028
 NavMeshAgent:
@@ -11984,6 +12007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151c002fe7ecb7e44b7c0c3969973fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _agent: {fileID: 299628950}
   target: {fileID: 297706544}
 --- !u!1001 &1346227778
 PrefabInstance:
@@ -13610,6 +13634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151c002fe7ecb7e44b7c0c3969973fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _agent: {fileID: 299628950}
   target: {fileID: 297706544}
 --- !u!195 &1483012367
 NavMeshAgent:
@@ -16188,6 +16213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151c002fe7ecb7e44b7c0c3969973fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _agent: {fileID: 299628950}
   target: {fileID: 297706544}
 --- !u!195 &1799040903
 NavMeshAgent:
