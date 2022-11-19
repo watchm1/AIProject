@@ -2,40 +2,51 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
+using Random = UnityEngine.Random;
 
 public class Destination : MonoBehaviour
 {
-    private AI aıScript;
+    private AI[] _aiScripts;
     public GameObject[] points;
-    private int currentTarget;
-    void Start()
+    private int _currentTarget;
+    private NavMeshAgent _selfNavmesh;
+    private void Start()
     {
-        currentTarget = 0;
-        aıScript = GameObject.Find("AI-1").GetComponent<AI>();
-        aıScript._agent.SetDestination(points[currentTarget].transform.position);
+        _currentTarget = 0;
+        _aiScripts = FindObjectsOfType<AI>();
+        HandleAllDestinations();
+        _selfNavmesh = GetComponent<NavMeshAgent>();
+        _selfNavmesh.speed = 10f;
     }
 
-    
-    
-
+    private void Update()
+    {
+        _selfNavmesh.SetDestination(points[_currentTarget].transform.position);
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Point"))
         {
-
-            if (currentTarget==3)
+            
+            if (_currentTarget == points.Length -1)
             {
-                currentTarget = 0;
-                aıScript._agent.SetDestination(points[currentTarget].transform.position);
-
+                _currentTarget = 0;
             }
             else
             {
-                currentTarget++;
-                aıScript._agent.SetDestination(points[currentTarget].transform.position);
-
+                _currentTarget = Random.Range(0, points.Length-1);
             }
+            HandleAllDestinations();
+            Debug.Log("Current index" + _currentTarget);
+        }
+    }
 
+    private void HandleAllDestinations()
+    {
+        foreach (var ai in _aiScripts)
+        {
+            ai.agent.SetDestination(points[_currentTarget].transform.position);
         }
     }
 }

@@ -1,20 +1,24 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Serialization;
 
 public class AI : MonoBehaviour
 {
-    public NavMeshAgent _agent;
+    public NavMeshAgent agent;
     public GameObject target;
-    void Start()
+
+    public void Awake()
     {
-        _agent = GetComponent<NavMeshAgent>();
+        agent = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        _agent.SetDestination(target.transform.position);
+        agent.SetDestination(target.transform.position);
     }
+    
 }
